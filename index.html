@@ -2,157 +2,263 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Instagram Feed</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Instagram Feed</title>
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-        <div class="row" style="background-color:aquamarine;">
-            <div class="col-4"></div>
-            <div class="col-3" style="padding-top: 10px;"><i class="fab fa-instagram"></i> Instagram</div>
+    <div class="row" style="background-color: darkgrey;">
+      <!-- primera fila abre -->
+      <div class="col-sm-3"></div>
 
-            <div class="col-2">
-                <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-   Create New Post 
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-            
-            
-            
+      <div class="col-sm-3" style="padding-top: 10px;"><i class="fab fa-instagram" style="font-size: 30px;"></i>   <b>Instagram</b></div>
+
+      <div class="col-sm-1">  
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">New Post</button>
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    <img src="./img/camera-fill.svg" alt="">
+                    <img src="./img/geo-alt-fill.svg" alt="">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
+
+              </div>
             </div>
-           <div class="col-1"><div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Action
+          </div>
+        </div>
+
+
+
+
+      </div>
+        <div class="col-sm-1">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./img/nut.svg" alt="">
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Separated link</a></li>
             </ul>
-          </div></div>
-
-
+          </div>
         </div>
+    </div>
+    <!-- primera fila cierre -->
 
 
 
+    <div class="row">
+      <!-- segunda fila botones gripp inicio-->
+      <div class="col-sm-5"></div>
+      
 
-        <div class="row">
-
-<div class="col-3"></div>
-<div class="col-3"></div>
-
-           <div class="col-3">
-              <nav class="navbar navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="./GaleryFeed.html">
-                <img src="./img/grid-3x3-gap-fill.svg" alt="" width="30" height="24"></i>
+      <div class="col-sm-2">
+        <nav class="navbar">
+         
+            <a class="navbar-brand" href="./GaleryFeed.html">
+              <img src="./img/grid-3x3-gap-fill.svg" alt="" width="30" height="24"></i>
+              <a class="navbar-brand" href="./GaleryFeed.html" style="margin-right: 80px;">
+                <img src="./img/negroo.png" alt="" width="15" height="15"></i>
               </a>
-            </div>
-          </nav></div>
-           <div class="col-3">
-            <div class="col-3"> <nav class="navbar navbar-light bg-light">
-              <div class="container">
-                <a class="navbar-brand" href="./GaleryFeed.html">
-                  <img src="./img/grid-3x3-gap-fill.svg" alt="" width="30" height="24"></i>
-                </a>
-              </div>
-            </nav></div>
-           </div>
+            
+            
+            </a>
+           
+          
+        </nav>
+       
 
+
+      </div>
+     
+
+      <!-- segunda fila botones gripp inicio-->
+    </div>
+
+
+    
+    <div class="row" style="width: 100%;">
+      <!-- fila imagen perrito -->
+
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+              <div class="row">
+
+                
+                <div class="col-sm-10"><h2 style="float: left;">My Firts Photo</h2></div>
+                <div class="col-sm-2"><h2>1/3</h2></div>
+              </div>
+       
+        <img src="./img/perrito.png" alt="" width="700px" height="500px" class="img-fluid">
+
+
+      </div>
+      <div class="col-sm-2"></div>
+
+
+      <!-- fila imagen perrito cierre -->
+
+
+      <div class="row">
+        <!-- fila elemento like-text-imagen corazon y comments -->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <p><strong>8987 Likes</strong></p>
+
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse
+            quos
+            fuga nihil? Nam, eligendi quaerat.</p>
+
+          <i class="fas fa-heart" style="font-size: 20px;"> Comments</i>
 
         </div>
+        <div class="col-sm-2"></div>
 
+        <!-- fila elemento like-text-imagen corazon y comments cierre-->
+      </div>
+
+
+
+
+    </div>
+
+
+    <!-- fila imagen gato -->
+    <div class="row">
+
+
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
         <div class="row">
 
-            <div class="col-1"></div>
-
-            <div class="col-10" style="background-color:gainsboro;">
-                <h3 style="padding-top: 15px;">my Firts Photo</h3>
-                <h4 style="float: right;">1/3</h4>
-                <img src="./img/perrito.png" alt="" width="700px" height="500px" style="margin-left: 130px;">
-
-
-            </div>
-            <div class="col-1"></div>
-            
+                
+          <div class="col-sm-10"><h2 style="float: left;">My Second Photo</h2></div>
+          <div class="col-sm-2"><h2>2/3</h2></div>
         </div>
-<div class="row">
-
-<p><strong>1233 Likes</strong></p>
-</div>
-<div class="row">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse quos fuga nihil? Nam, eligendi quaerat.</p>
-
-</div>
-<div class="row"><i class="fas fa-heart" style="font-size: 20px;">        Comments</i></div>
+        <img src="./img/gato.jfif" alt="" width="700px" height="500px" class="img-fluid">
 
 
-<div class="row" style="padding-top: 50px;">
+      </div>
+      <div class="col-sm-2"></div>
+      <!-- fila imagen gato -->
+      <div class="row">
+        <!-- fila elemento like-text-imagen corazon y comments -->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <p><strong>1233 Likes</strong></p>
 
-    <div class="col-1"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse
+            quos
+            fuga nihil? Nam, eligendi quaerat.</p>
 
-    <div class="col-10" style="background-color:gainsboro;">
-        <h3 style="padding-top: 15px;">my second Photo</h3>
-        <h4 style="float: right;">2/3</h4>
-        <img src="./img/gato.jfif" alt="" width="700px" height="500px" style="margin-left: 130px;">
+          <i class="fas fa-heart" style="font-size: 20px;"> Comments</i>
+
+        </div>
+        <div class="col-sm-2"></div>
+
+        <!-- fila elemento like-text-imagen corazon y comments cierre-->
+      </div>
+
+
+
+
+
 
 
     </div>
-    <div class="col-1"></div>
-    
-</div>
-<div class="row">
 
-<p><strong>1233 Likes</strong></p>
-</div>
-<div class="row">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse quos fuga nihil? Nam, eligendi quaerat.</p>
+ <!-- fila imagen ave -->
+ <div class="row">
 
-</div>
-<div class="row"><i class="fas fa-heart" style="font-size: 20px;">        Comments</i></div>
+
+  <div class="col-sm-2"></div>
+
+  <div class="col-sm-8">
+    <div class="row">
+
+                
+      <div class="col-sm-10"><h2 style="float: left;">My third Photo</h2></div>
+      <div class="col-sm-2"><h2>3/3</h2></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-        crossorigin="anonymous"></script>
+    <img src="./img/ave.jfif" alt="" width="700px" height="500px" class="img-fluid">
+
+
+  </div>
+  <div class="col-sm-2"></div>
+  <!-- fila imagen gato -->
+  <div class="row">
+    <!-- fila elemento like-text-imagen corazon y comments -->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p><strong>500 Likes</strong></p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse
+        quos
+        fuga nihil? Nam, eligendi quaerat.</p>
+
+      <i class="fas fa-heart" style="font-size: 20px;"> Comments</i>
+
+    </div>
+    <div class="col-sm-2"></div>
+
+    <!-- fila elemento like-text-imagen corazon y comments cierre-->
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+
 
 </body>
 
