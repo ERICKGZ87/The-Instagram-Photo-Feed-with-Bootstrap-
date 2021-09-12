@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
   <title>Instagram Feed</title>
 </head>
 
@@ -24,55 +26,59 @@
         <b>Instagram</b>
       </div>
 
-      <div class="col-sm-1">
+      <div class="col-sm-6" style="display: flex;">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          data-bs-whatever="@mdo">New Post</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form>
+        <div class="botopost">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Create New Post</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
 
-                  <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                    <img src="./img/camera-fill.svg" alt="">
-                    <img src="./img/geo-alt-fill.svg" alt="">
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Send</button>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                      <img src="./img/camera-fill.svg" alt="">
+                      <img src="./img/geo-alt-fill.svg" alt="">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">Send</button>
 
+                </div>
               </div>
             </div>
+
+
+          </div>
+        </div>
+        
+        <div class="botos-action">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./img/nut.svg" alt="">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </div>
         </div>
 
-
-
-
       </div>
-      <div class="col-sm-1">
 
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./img/nut.svg" alt="">
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
     <!-- primera fila cierre -->
 
@@ -142,16 +148,29 @@
       <div class="row">
         <!-- fila elemento like-text-imagen corazon y comments -->
         <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <p><strong>8987 Likes</strong></p>
 
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse
-            quos
-            fuga nihil? Nam, eligendi quaerat.</p>
+        <div class="col-sm-8" style="display: flex;">
+          
+                <div>
+                <p><strong>8987 Likes</strong></p>
 
-          <i class="fas fa-heart" style="font-size: 20px;"> Comments</i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat similique distinctio tempora enim esse
+                      quos
+                      fuga nihil? Nam, eligendi quaerat.</p>
+          
+                    <i class="fas fa-heart" style="font-size: 20px;"> Comments</i>
+          
 
-        </div>
+                </div>
+                
+                      <!-- 
+                  <div class="col-sm-6">
+                    <img src="./img/tres-puntos.png" alt="" width="30px" height="30px" style="float: right;">
+                  </div>
+                        -->
+       </div>
+     
+
         <div class="col-sm-2"></div>
 
         <!-- fila elemento like-text-imagen corazon y comments cierre-->
@@ -164,7 +183,7 @@
 
 
     <!-- fila imagen gato -->
-    <div class="row">
+    <div class="row" style="padding-top: 15px;">
 
 
       <div class="col-sm-2"></div>
